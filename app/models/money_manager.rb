@@ -5,14 +5,14 @@ class MoneyManager
   end
 
   def available(money)?
-    (@army > money)
+    (@army.ammount > money)
   end
 
   def subtract(money)
-    @army - money if available(money)?
+    @army.ammount - money if available(money)?
   end
 
   def sum(money)
-    @army + money if available(money)?
+    @army.ammount + money if available(money)?
   end
 end

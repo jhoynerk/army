@@ -1,4 +1,4 @@
-class TypeUnit < ActiveRecord::Base
+class UnitType < ActiveRecord::Base
   belongs_to :civilization
   has_many :units
 
